@@ -15,4 +15,14 @@ a {
   display: none;
   clear: both; }
 
+#header {
+  width: 100%; }
+  #header .inner {
+    width: 1180px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative; }
+    #header .inner h1 {
+      font: bold 22px/1 "arial"; }
+
 /*# sourceMappingURL=style.css.map */
