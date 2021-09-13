@@ -99,3 +99,127 @@
         object-fit: cover;
     }
 }
+
+#footer{
+    width: 100%;
+    padding: 100px 0 50px;
+    background: #efefef;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+
+        .wrap{
+            width: 100%;
+            border-bottom: 1px solid #bbb;
+            margin-bottom: 50px;
+
+            &::after{
+                content: ''; display: block; clear: both;
+            }
+
+            .menu1{
+                margin-bottom: 50px;
+
+                &::after{
+                    content: ''; display: block; clear: both;
+                }
+                >li{
+                    float: left;
+                    margin-right: 100px;
+
+                    &:last-child{
+                        float: right;
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            address{
+                float: left;
+            }
+
+            >p{
+                float: right;
+            }
+
+            span{
+                float: right;
+                display: block;
+                width: 100%;
+                text-align: right;
+                margin: 40px 0px 20px;
+            }
+        }
+
+        .bottom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+
+            h1{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+    
+                a{
+                    display: inline-block;
+                    margin-left: 15px;
+                    font: bold 24px/15px 'arial';
+                    color: #111;
+                    letter-spacing: 1px;
+                }
+                
+                i{
+                    font-size: 40px;
+                    color: #111;
+                    line-height: 10px;
+                }
+            }
+
+            .menu2{
+                &::after{
+                    content: ''; display: block; clear: both;
+                }
+    
+    
+                li{
+                    float: left;
+                    display: block;
+                    padding: 0px 30px;
+    
+                    &:first-child{
+                        padding-left: 0;
+                    }
+    
+                    &:last-child{
+                        padding-right: 0;
+                    }
+    
+                    a{
+                        font: 15px/1 'arial';
+                        color: #333;
+                    }
+                }
+            }
+
+            .sns{
+                &::after{
+                    content: ''; display: block; clear: both;
+                }
+    
+                li{
+                    float: left;
+                    display: block;
+                    margin-right: 20px;
+    
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
