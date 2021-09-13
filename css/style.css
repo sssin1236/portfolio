@@ -58,7 +58,7 @@ a {
       #header .inner #gnb li:last-child {
         padding-right: 0; }
       #header .inner #gnb li a {
-        font: 13px/1 "Slabo 27px";
+        font: 15px/1 "Slabo 27px";
         color: #333; }
     #header .inner .util::after {
       content: '';
