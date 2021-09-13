@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -16,13 +17,69 @@ a {
   clear: both; }
 
 #header {
-  width: 100%; }
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
   #header .inner {
     width: 1180px;
-    height: 100px;
     margin: 0 auto;
-    position: relative; }
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center; }
     #header .inner h1 {
-      font: bold 22px/1 "arial"; }
+      display: flex;
+      align-content: center;
+      justify-content: center; }
+      #header .inner h1 a {
+        display: inline-block;
+        margin-right: 15px;
+        font: bold 16px/15px "Slabo 27px";
+        color: #111;
+        letter-spacing: 1px; }
+      #header .inner h1 i {
+        font-size: 30px;
+        color: #111;
+        line-height: 10px; }
+    #header .inner #gnb::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #header .inner #gnb li {
+      float: left;
+      display: block;
+      padding: 0px 30px; }
+      #header .inner #gnb li:first-child {
+        padding-left: 0; }
+      #header .inner #gnb li:last-child {
+        padding-right: 0; }
+      #header .inner #gnb li a {
+        font: 13px/1 "Slabo 27px";
+        color: #333; }
+    #header .inner .util::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #header .inner .util li {
+      float: left;
+      display: block;
+      margin-right: 20px; }
+      #header .inner .util li:last-child {
+        margin-right: 0; }
+      #header .inner .util li a i {
+        color: #888; }
+
+#visual {
+  width: 100%;
+  height: 100vh;
+  z-index: 1; }
+  #visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */
