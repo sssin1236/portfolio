@@ -122,6 +122,11 @@ a {
             #footer .inner .wrap .menu1 > li .depth li a {
               font: 14px/1 'arial';
               color: #777; }
+          #footer .inner .wrap .menu1 > li p {
+            display: block;
+            margin-bottom: 10px;
+            font: 14px/1.2 'arial';
+            color: #777; }
       #footer .inner .wrap address {
         float: left; }
       #footer .inner .wrap > p {
