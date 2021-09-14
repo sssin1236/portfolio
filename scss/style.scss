@@ -1,5 +1,9 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Saira+Semi+Condensed:wght@200&display=swap');
+//'Rajdhani'
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Rajdhani:wght@300&display=swap');
+//'Barlow Condensed'
 
 @import "reset.scss";
 @import "custom.scss";
@@ -138,16 +142,17 @@
 
                     >a{
                         display: block;
-                        font: bold 16px/1 'arial';
+                        font: bold 16px/1 'Rajdhani';
                         color: #555;
+                        letter-spacing: 1px;
                         margin-bottom: 10px;
                     }
 
                     p{
                         display: block;
                         margin-bottom: 15px;
-                        font: 14px/1.2 'arial';
-                        color: #777;
+                        font: 14px/1.2 'Rajdhani';
+                        color: #666;
                     }
 
                     label{
@@ -164,19 +169,19 @@
                         border: none;
                         background: #bbb;
                         border-radius: 5px;
+                        font-family: 'Rajdhani';
                         color: #fff;
                     }
                     
                     .depth{
                         li{
-                            margin-bottom: 5px;
 
                             &:last-child{
                                 margin-bottom: 0;
                             }
 
                             a{
-                                font: 14px/1 'arial';
+                                font: 15px/1.4 'Rajdhani';
                                 color: #777;
                             }
                         }
@@ -186,13 +191,13 @@
 
             address{
                 float: left;
-                font: 13px/1 'arial';
+                font: 15px/1 'Rajdhani';
                 color: #777;
             }
 
             >p{
                 float: right;
-                font: 13px/1 'arial';
+                font: 15px/1 'Rajdhani';
                 color: #777;
             }
 
@@ -200,7 +205,7 @@
                 float: right;
                 display: block;
                 width: 100%;
-                font: bold 18px/1 'arial';
+                font: bold 20px/1 'Rajdhani';
                 color: #999;
                 text-align: right;
                 margin: 40px 0px 20px;
@@ -221,7 +226,7 @@
                 a{
                     display: inline-block;
                     margin-left: 15px;
-                    font: 18px/15px 'arial';
+                    font: bold 20px/15px 'Rajdhani';
                     color: #555;
                     letter-spacing: 1px;
                 }
@@ -253,8 +258,8 @@
                     }
     
                     a{
-                        font: bold 13px/1 'arial';
-                        color: #555;
+                        font: bold 15px/1 'Rajdhani';
+                        color: #666;
                         letter-spacing: 1px;
                     }
                 }
