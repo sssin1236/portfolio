@@ -133,6 +133,28 @@
                         float: right;
                         margin-right: 0;
                     }
+
+                    >a{
+                        display: block;
+                        font: bold 16px/1 'arial';
+                        color: #555;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .depth{
+                        li{
+                            margin-bottom: 5px;
+
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+
+                            a{
+                                font: 14px/1 'arial';
+                                color: #777;
+                            }
+                        }
+                    }
                 }
             }
 

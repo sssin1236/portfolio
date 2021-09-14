@@ -110,6 +110,18 @@ a {
           #footer .inner .wrap .menu1 > li:last-child {
             float: right;
             margin-right: 0; }
+          #footer .inner .wrap .menu1 > li > a {
+            display: block;
+            font: bold 16px/1 'arial';
+            color: #555;
+            margin-bottom: 10px; }
+          #footer .inner .wrap .menu1 > li .depth li {
+            margin-bottom: 5px; }
+            #footer .inner .wrap .menu1 > li .depth li:last-child {
+              margin-bottom: 0; }
+            #footer .inner .wrap .menu1 > li .depth li a {
+              font: 14px/1 'arial';
+              color: #777; }
       #footer .inner .wrap address {
         float: left; }
       #footer .inner .wrap > p {
