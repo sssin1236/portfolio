@@ -172,12 +172,12 @@ a {
         #footer .inner .bottom h1 a {
           display: inline-block;
           margin-left: 15px;
-          font: bold 24px/15px 'arial';
-          color: #111;
+          font: 18px/15px 'arial';
+          color: #555;
           letter-spacing: 1px; }
         #footer .inner .bottom h1 i {
-          font-size: 40px;
-          color: #111;
+          font-size: 35px;
+          color: #555;
           line-height: 10px; }
       #footer .inner .bottom .menu2::after {
         content: '';
@@ -192,8 +192,9 @@ a {
         #footer .inner .bottom .menu2 li:last-child {
           padding-right: 0; }
         #footer .inner .bottom .menu2 li a {
-          font: 15px/1 'arial';
-          color: #333; }
+          font: bold 13px/1 'arial';
+          color: #555;
+          letter-spacing: 1px; }
       #footer .inner .bottom .sns::after {
         content: '';
         display: block;
@@ -201,8 +202,19 @@ a {
       #footer .inner .bottom .sns li {
         float: left;
         display: block;
-        margin-right: 20px; }
+        margin-right: 10px; }
         #footer .inner .bottom .sns li:last-child {
           margin-right: 0; }
+        #footer .inner .bottom .sns li a {
+          display: block;
+          width: 40px;
+          height: 40px;
+          background: #ddd;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px; }
+          #footer .inner .bottom .sns li a i {
+            font-size: 20px;
+            color: #888; }
 
 /*# sourceMappingURL=style.css.map */
