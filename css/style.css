@@ -127,6 +127,8 @@ a {
             margin-bottom: 10px;
             font: 14px/1.2 'arial';
             color: #777; }
+          #footer .inner .wrap .menu1 > li input[type="email"] {
+            display: block; }
       #footer .inner .wrap address {
         float: left; }
       #footer .inner .wrap > p {
