@@ -18,6 +18,230 @@ a {
   display: none;
   clear: both; }
 
+#header_sub {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+  #header_sub .inner {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-content: center; }
+    #header_sub .inner h1 {
+      display: flex;
+      align-content: center;
+      justify-content: center; }
+      #header_sub .inner h1 a {
+        display: inline-block;
+        margin-right: 15px;
+        font: bold 16px/15px "Slabo 27px";
+        color: #111;
+        letter-spacing: 1px; }
+      #header_sub .inner h1 i {
+        font-size: 30px;
+        color: #111;
+        line-height: 10px; }
+    #header_sub .inner #gnb::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #header_sub .inner #gnb li {
+      float: left;
+      display: block;
+      padding: 0px 30px; }
+      #header_sub .inner #gnb li:first-child {
+        padding-left: 0; }
+      #header_sub .inner #gnb li:last-child {
+        padding-right: 0; }
+      #header_sub .inner #gnb li a {
+        font: 15px/1 "Slabo 27px";
+        color: #333; }
+    #header_sub .inner .util::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #header_sub .inner .util li {
+      float: left;
+      display: block;
+      margin-right: 20px; }
+      #header_sub .inner .util li:last-child {
+        margin-right: 0; }
+      #header_sub .inner .util li a i {
+        color: #888; }
+
+#footer_sub {
+  width: 100%;
+  padding: 100px 0 50px;
+  background: #efefef; }
+  #footer_sub .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    #footer_sub .inner .wrap {
+      width: 100%;
+      border-bottom: 1px solid #bbb;
+      margin-bottom: 50px; }
+      #footer_sub .inner .wrap::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer_sub .inner .wrap .menu1 {
+        margin-bottom: 50px; }
+        #footer_sub .inner .wrap .menu1::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #footer_sub .inner .wrap .menu1 > li {
+          float: left;
+          margin-right: 120px; }
+          #footer_sub .inner .wrap .menu1 > li:last-child {
+            float: right;
+            margin-right: 0;
+            width: 300px;
+            position: relative; }
+          #footer_sub .inner .wrap .menu1 > li > a {
+            display: block;
+            font: bold 16px/1 'Rajdhani';
+            color: #555;
+            letter-spacing: 1px;
+            margin-bottom: 10px; }
+          #footer_sub .inner .wrap .menu1 > li p {
+            display: block;
+            margin-bottom: 15px;
+            font: 14px/1.2 'Rajdhani';
+            color: #666; }
+          #footer_sub .inner .wrap .menu1 > li label {
+            font-size: 20px;
+            color: #777;
+            position: absolute;
+            bottom: 8px;
+            right: 20px; }
+          #footer_sub .inner .wrap .menu1 > li input[type=email] {
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 20px;
+            border: none;
+            background: #bbb;
+            border-radius: 5px;
+            font-family: 'Rajdhani';
+            color: #fff; }
+          #footer_sub .inner .wrap .menu1 > li .depth li:last-child {
+            margin-bottom: 0; }
+          #footer_sub .inner .wrap .menu1 > li .depth li a {
+            font: 15px/1.4 'Rajdhani';
+            color: #777; }
+      #footer_sub .inner .wrap address {
+        float: left;
+        font: 15px/1 'Rajdhani';
+        color: #777; }
+      #footer_sub .inner .wrap > p {
+        float: right;
+        font: 15px/1 'Rajdhani';
+        color: #777; }
+      #footer_sub .inner .wrap span {
+        float: right;
+        display: block;
+        width: 100%;
+        font: bold 20px/1 'Rajdhani';
+        color: #999;
+        text-align: right;
+        margin: 40px 0px 20px; }
+    #footer_sub .inner .bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-content: center; }
+      #footer_sub .inner .bottom h1 {
+        display: flex;
+        align-content: center;
+        justify-content: center; }
+        #footer_sub .inner .bottom h1 a {
+          display: inline-block;
+          margin-left: 15px;
+          font: bold 20px/15px 'Rajdhani';
+          color: #555;
+          letter-spacing: 1px; }
+        #footer_sub .inner .bottom h1 i {
+          font-size: 35px;
+          color: #555;
+          line-height: 10px; }
+      #footer_sub .inner .bottom .menu2::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer_sub .inner .bottom .menu2 li {
+        float: left;
+        display: block;
+        padding: 0px 30px; }
+        #footer_sub .inner .bottom .menu2 li:first-child {
+          padding-left: 0; }
+        #footer_sub .inner .bottom .menu2 li:last-child {
+          padding-right: 0; }
+        #footer_sub .inner .bottom .menu2 li a {
+          font: bold 15px/1 'Rajdhani';
+          color: #666;
+          letter-spacing: 1px; }
+      #footer_sub .inner .bottom .sns::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #footer_sub .inner .bottom .sns li {
+        float: left;
+        display: block;
+        margin-right: 10px; }
+        #footer_sub .inner .bottom .sns li:last-child {
+          margin-right: 0; }
+        #footer_sub .inner .bottom .sns li a {
+          display: block;
+          width: 40px;
+          height: 40px;
+          background: #ddd;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 40px; }
+          #footer_sub .inner .bottom .sns li a i {
+            font-size: 20px;
+            color: #888; }
+
+.content {
+  width: 100%;
+  padding: 0px 0px 100px; }
+  .content .sub_visual {
+    width: 100%;
+    height: 300px;
+    background: #666;
+    margin-bottom: 100px; }
+    .content .sub_visual .txt {
+      width: 1180px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      .content .sub_visual .txt h1 {
+        font: normal 50px/1 'Rajdhani';
+        color: #eee;
+        position: absolute;
+        top: 75%;
+        left: 0;
+        z-index: 3; }
+        .content .sub_visual .txt h1 span {
+          font: normal 20px/1 'arial';
+          color: #fff;
+          border-left: 3px solid #fff;
+          padding: 0 20px;
+          z-index: 3; }
+  .content .inner {
+    width: 1180px;
+    margin: 0 auto;
+    min-height: 500px;
+    position: relative; }
+
 #header {
   width: 100%;
   height: 100px;
