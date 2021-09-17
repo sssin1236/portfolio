@@ -242,6 +242,9 @@ a {
     min-height: 500px;
     position: relative; }
 
+.member .sub_visual {
+  background: url(../../img/unsplash.jpg) no-repeat bottom/cover; }
+
 #header {
   width: 100%;
   height: 100px;
