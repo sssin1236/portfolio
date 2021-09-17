@@ -40,12 +40,12 @@ a {
       #header_sub .inner h1 a {
         display: inline-block;
         margin-right: 15px;
-        font: bold 16px/15px "Slabo 27px";
-        color: #111;
+        font: bold 16px/15px "Rajdhani";
+        color: #7F462C;
         letter-spacing: 1px; }
       #header_sub .inner h1 i {
         font-size: 30px;
-        color: #111;
+        color: #C36241;
         line-height: 10px; }
     #header_sub .inner #gnb::after {
       content: '';
@@ -60,8 +60,8 @@ a {
       #header_sub .inner #gnb li:last-child {
         padding-right: 0; }
       #header_sub .inner #gnb li a {
-        font: 15px/1 "Slabo 27px";
-        color: #333; }
+        font: 15px/1 "Rajdhani";
+        color: #7F462C; }
     #header_sub .inner .util::after {
       content: '';
       display: block;
@@ -73,7 +73,7 @@ a {
       #header_sub .inner .util li:last-child {
         margin-right: 0; }
       #header_sub .inner .util li a i {
-        color: #888; }
+        color: #E18B6B; }
 
 #footer_sub {
   width: 100%;
@@ -225,7 +225,7 @@ a {
       position: relative; }
       .content .sub_visual .txt h1 {
         font: normal 50px/1 'Rajdhani';
-        color: #eee;
+        color: #fff;
         position: absolute;
         top: 75%;
         left: 0;
@@ -241,6 +241,9 @@ a {
     margin: 0 auto;
     min-height: 500px;
     position: relative; }
+
+.member .sub_visual {
+  background: url(../../img/beige5.jpg) no-repeat center/cover; }
 
 #header {
   width: 100%;
@@ -264,7 +267,7 @@ a {
       #header .inner h1 a {
         display: inline-block;
         margin-right: 15px;
-        font: bold 16px/15px "Slabo 27px";
+        font: bold 16px/15px "Rajdhani";
         color: #111;
         letter-spacing: 1px; }
       #header .inner h1 i {
@@ -284,7 +287,7 @@ a {
       #header .inner #gnb li:last-child {
         padding-right: 0; }
       #header .inner #gnb li a {
-        font: 15px/1 "Slabo 27px";
+        font: 15px/1 "Rajdhani";
         color: #333; }
     #header .inner .util::after {
       content: '';
