@@ -40,7 +40,7 @@ a {
       #header_sub .inner h1 a {
         display: inline-block;
         margin-right: 15px;
-        font: bold 16px/15px "Slabo 27px";
+        font: bold 16px/15px "Rajdhani";
         color: #111;
         letter-spacing: 1px; }
       #header_sub .inner h1 i {
@@ -60,7 +60,7 @@ a {
       #header_sub .inner #gnb li:last-child {
         padding-right: 0; }
       #header_sub .inner #gnb li a {
-        font: 15px/1 "Slabo 27px";
+        font: 15px/1 "Rajdhani";
         color: #333; }
     #header_sub .inner .util::after {
       content: '';
@@ -264,7 +264,7 @@ a {
       #header .inner h1 a {
         display: inline-block;
         margin-right: 15px;
-        font: bold 16px/15px "Slabo 27px";
+        font: bold 16px/15px "Rajdhani";
         color: #111;
         letter-spacing: 1px; }
       #header .inner h1 i {
@@ -284,7 +284,7 @@ a {
       #header .inner #gnb li:last-child {
         padding-right: 0; }
       #header .inner #gnb li a {
-        font: 15px/1 "Slabo 27px";
+        font: 15px/1 "Rajdhani";
         color: #333; }
     #header .inner .util::after {
       content: '';
