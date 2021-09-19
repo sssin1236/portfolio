@@ -23,13 +23,13 @@
                 display: inline-block;
                 margin-right: 15px;
                 font: bold 16px/15px $mainFon;
-                color: #7F462C;
+                color: #111;
                 letter-spacing: 1px;
             }
             
             i{
                 font-size: 30px;
-                color: #C36241;
+                color: #111;
                 line-height: 10px;
             }
         }
@@ -55,7 +55,7 @@
 
                 a{
                     font: 15px/1 $mainFon;
-                    color: #7F462C;
+                    color: #333;
                 }
             }
         }
@@ -75,11 +75,7 @@
                 }
 
                 a i{
-<<<<<<< HEAD
                     color: #ddd;
-=======
-                    color: #E18B6B;
->>>>>>> master
                 }
             }
         }
