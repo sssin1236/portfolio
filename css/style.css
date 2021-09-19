@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Saira+Semi+Condensed:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Rajdhani:wght@300&display=swap");
 * {
@@ -144,14 +145,16 @@ a {
         float: right;
         font: 15px/1 'Rajdhani';
         color: #777; }
-      #footer_sub .inner .wrap span {
+      #footer_sub .inner .wrap .visa {
         float: right;
-        display: block;
         width: 100%;
-        font: bold 20px/1 'Rajdhani';
-        color: #999;
         text-align: right;
         margin: 40px 0px 20px; }
+        #footer_sub .inner .wrap .visa span {
+          font: 20px/1 'Lalezar';
+          color: #999; }
+          #footer_sub .inner .wrap .visa span:nth-of-type(1) {
+            margin-right: 20px; }
     #footer_sub .inner .bottom {
       width: 100%;
       display: flex;
@@ -380,14 +383,16 @@ a {
         float: right;
         font: 15px/1 'Rajdhani';
         color: #777; }
-      #footer .inner .wrap span {
+      #footer .inner .wrap .visa {
         float: right;
-        display: block;
         width: 100%;
-        font: bold 20px/1 'Rajdhani';
-        color: #999;
         text-align: right;
         margin: 40px 0px 20px; }
+        #footer .inner .wrap .visa span {
+          font: 20px/1 'Lalezar';
+          color: #999; }
+          #footer .inner .wrap .visa span:nth-of-type(1) {
+            margin-right: 20px; }
     #footer .inner .bottom {
       width: 100%;
       display: flex;
