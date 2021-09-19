@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Saira+Semi+Condensed:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Rajdhani:wght@300&display=swap");
 * {
@@ -204,10 +203,10 @@ a {
           height: 40px;
           background: #ddd;
           border-radius: 50%;
-          text-align: center;
-          line-height: 40px; }
+          text-align: center; }
           #footer_sub .inner .bottom .sns li a i {
             font-size: 20px;
+            line-height: 40px;
             color: #888; }
 
 .content {
@@ -300,7 +299,7 @@ a {
       #header .inner .util li:last-child {
         margin-right: 0; }
       #header .inner .util li a i {
-        color: #888; }
+        color: #aaa; }
 
 #visual {
   width: 100%;
@@ -440,10 +439,10 @@ a {
           height: 40px;
           background: #ddd;
           border-radius: 50%;
-          text-align: center;
-          line-height: 40px; }
+          text-align: center; }
           #footer .inner .bottom .sns li a i {
             font-size: 20px;
+            line-height: 40px;
             color: #888; }
 
 /*# sourceMappingURL=style.css.map */
