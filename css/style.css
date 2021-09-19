@@ -204,10 +204,10 @@ a {
           height: 40px;
           background: #ddd;
           border-radius: 50%;
-          text-align: center;
-          line-height: 40px; }
+          text-align: center; }
           #footer_sub .inner .bottom .sns li a i {
             font-size: 20px;
+            line-height: 40px;
             color: #888; }
 
 .content {
@@ -440,10 +440,10 @@ a {
           height: 40px;
           background: #ddd;
           border-radius: 50%;
-          text-align: center;
-          line-height: 40px; }
+          text-align: center; }
           #footer .inner .bottom .sns li a i {
             font-size: 20px;
+            line-height: 40px;
             color: #888; }
 
 /*# sourceMappingURL=style.css.map */
