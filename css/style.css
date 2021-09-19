@@ -1,31 +1,56 @@
 /*
-Error: Invalid CSS after "...sub/layout_sub"": expected "{", was ";"
-        on line 8 of scss/style.scss
+Error: Invalid CSS after "@import ": expected "{", was "url('https://fo..."
+        on line 4 of scss/_custom.scss
+        from line 4 of scss/style.scss
 
-3: @import "reset.scss";
-4: @import "custom.scss";
-5: 
-6: //sub layout
-7: <<<<<<< HEAD
-8: @import "sub/layout_sub";
-9: @import "sub/philosophy";
-10: =======
-11: @import "sub/layout_sub.scss";
-12: @import "sub/philosophy.scss";
-13: >>>>>>> master
+1: 
+2: <<<<<<< HEAD
+3: // @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+4: @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+5: // 'Lalezar'
+6: =======
+7: @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+8: >>>>>>> master
+9: @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Saira+Semi+Condensed:wght@200&display=swap');
 
 Backtrace:
-scss/style.scss:8
+scss/_custom.scss:4
+scss/style.scss:4
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
@@ -46,4 +71,4 @@ scss/style.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...sub/layout_sub\"\": expected \"{\", was \";\"\A         on line 8 of scss/style.scss\A \A 3: @import \"reset.scss\";\A 4: @import \"custom.scss\";\A 5: \A 6: //sub layout\A 7: <<<<<<< HEAD\A 8: @import \"sub/layout_sub\";\A 9: @import \"sub/philosophy\";\A 10: =======\A 11: @import \"sub/layout_sub.scss\";\A 12: @import \"sub/philosophy.scss\";\A 13: >>>>>>> master"; }
+  content: "Error: Invalid CSS after \"@import \": expected \"{\", was \"url('https://fo...\"\A         on line 4 of scss/_custom.scss\A         from line 4 of scss/style.scss\A \A 1: \A 2: <<<<<<< HEAD\A 3: // @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');\A 4: @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');\A 5: // 'Lalezar'\A 6: =======\A 7: @import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');\A 8: >>>>>>> master\A 9: @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Saira+Semi+Condensed:wght@200&display=swap');"; }
