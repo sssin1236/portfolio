@@ -316,14 +316,12 @@ a {
         color: #fff;
         position: absolute;
         top: 75%;
-        left: 0;
-        z-index: 3; }
+        left: 0; }
         .content .sub_visual .txt h1 span {
           font: normal 20px/1 'arial';
           color: #fff;
           border-left: 3px solid #fff;
-          padding: 0 20px;
-          z-index: 3; }
+          padding: 0 20px; }
   .content .inner {
     width: 1180px;
     margin: 0 auto;
