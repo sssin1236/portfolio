@@ -41,11 +41,11 @@ a {
         display: inline-block;
         margin-right: 15px;
         font: bold 16px/15px "Rajdhani";
-        color: #7F462C;
+        color: #111;
         letter-spacing: 1px; }
       #header_sub .inner h1 i {
         font-size: 30px;
-        color: #C36241;
+        color: #111;
         line-height: 10px; }
     #header_sub .inner #gnb::after {
       content: '';
@@ -61,7 +61,7 @@ a {
         padding-right: 0; }
       #header_sub .inner #gnb li a {
         font: 15px/1 "Rajdhani";
-        color: #7F462C; }
+        color: #333; }
     #header_sub .inner .util::after {
       content: '';
       display: block;
@@ -205,14 +205,16 @@ a {
         float: right;
         font: 15px/1 'Rajdhani';
         color: #777; }
-      #footer_sub .inner .wrap span {
+      #footer_sub .inner .wrap .visa {
         float: right;
-        display: block;
         width: 100%;
-        font: bold 20px/1 'Rajdhani';
-        color: #999;
         text-align: right;
         margin: 40px 0px 20px; }
+        #footer_sub .inner .wrap .visa span {
+          font: 20px/1 'Lalezar';
+          color: #999; }
+          #footer_sub .inner .wrap .visa span:nth-of-type(1) {
+            margin-right: 20px; }
     #footer_sub .inner .bottom {
       width: 100%;
       display: flex;
