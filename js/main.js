@@ -29,6 +29,15 @@ for(let el of list){
         // pause 버튼부터 audio를 찾아서 재생중지
         e.currentTarget.closest("article").querySelector("audio").pause();
     });
+
+    load.addEventListener("click", e=>{
+        // load 버튼부터 pic을 찾아서 on을 추가하여 활성화
+        e.currentTarget.closest("article").querySelector(".pic").classList.add("on");
+        // load 버튼부터 audio를 찾아서 처음으로 되돌림
+        e.currentTarget.closest("article").querySelector("audio").load();
+        // play 버튼부터 audio 요소를 찾아서 음악재생
+        e.currentTarget.closest("article").querySelector("audio").play();
+    });
 }
 
 
