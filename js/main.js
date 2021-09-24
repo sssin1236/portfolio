@@ -22,6 +22,13 @@ for(let el of list){
         // play 버튼부터 audio 요소를 찾아서 음악재생
         e.currentTarget.closest("article").querySelector("audio").play();
     });
+
+    pause.addEventListener("click", e=>{
+        // pause 버튼부터 .pic을 찾아서 클래스 on을 제거하여 비활성화
+        e.currentTarget.closest("article").querySelector(".pic").classList.remove("on");
+        // pause 버튼부터 audio를 찾아서 재생중지
+        e.currentTarget.closest("article").querySelector("audio").pause();
+    });
 }
 
 
