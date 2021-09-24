@@ -452,19 +452,20 @@ a {
   width: 100%;
   height: 100vh;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
   #visual img {
     width: 100%;
     height: 100%;
     object-fit: cover; }
   #visual section {
-    width: 20vw;
-    height: 65vh;
+    width: 45vw;
+    height: 40vh;
     position: absolute;
     top: 50%;
-    left: 50%;
-    margin-top: -25vh;
-    margin-left: -10vw;
+    left: 120%;
+    margin-top: -20vh;
+    margin-left: -23vw;
     transition: 1s; }
     #visual section article {
       width: 100%;
@@ -472,15 +473,32 @@ a {
       position: absolute;
       left: 0;
       top: 0; }
+      #visual section article.on .inner {
+        transform: scale(1.1);
+        opacity: 0.9; }
       #visual section article .inner {
         width: 100%;
         height: 100%;
         background: rgba(69, 69, 69, 0.653);
         border-radius: 10px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
         opacity: 0.6;
         transform: scale(0.8);
         transition: all 1s; }
+        #visual section article .inner .pic {
+          width: 15vw;
+          height: 15vw;
+          margin: 0 auto;
+          border-radius: 5%;
+          background-repeat: no-repeat;
+          background-position: 200%; }
+          #visual section article .inner .pic video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
 
 #footer {
   width: 100%;
