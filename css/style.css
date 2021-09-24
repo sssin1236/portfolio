@@ -459,13 +459,13 @@ a {
     height: 100%;
     object-fit: cover; }
   #visual section {
-    width: 45vw;
-    height: 40vh;
+    width: 450px;
+    height: 300px;
     position: absolute;
     top: 50%;
     left: 120%;
-    margin-top: -20vh;
-    margin-left: -23vw;
+    margin-top: -150px;
+    margin-left: -200px;
     transition: 1s; }
     #visual section article {
       width: 100%;
@@ -475,13 +475,15 @@ a {
       top: 0; }
       #visual section article.on .inner {
         transform: scale(1.1);
-        opacity: 0.9; }
+        opacity: 0.9;
+        background: rgba(69, 69, 69, 0.817); }
       #visual section article .inner {
         width: 100%;
         height: 100%;
         background: rgba(69, 69, 69, 0.653);
         border-radius: 10px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-content: center;
@@ -489,16 +491,38 @@ a {
         transform: scale(0.8);
         transition: all 1s; }
         #visual section article .inner .pic {
-          width: 300px;
-          height: 150px;
-          margin: 0 auto;
+          width: 100%;
+          height: 100%;
           border-radius: 5%;
           background-repeat: no-repeat;
-          background-position: center; }
+          background-position: center;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
           #visual section article .inner .pic video {
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            border-radius: 10px; }
+          #visual section article .inner .pic img {
+            width: 100%;
+            height: 100%;
             object-fit: cover; }
+        #visual section article .inner .txt {
+          width: 70%;
+          padding: 30px 20px;
+          position: absolute;
+          bottom: 50%;
+          left: -120px;
+          background: #111;
+          transition: all 1s; }
+          #visual section article .inner .txt h1 {
+            font: bold 24px/1 "Rajdhani";
+            color: #ccc;
+            margin-bottom: 20px; }
+          #visual section article .inner .txt p {
+            font: 15px/1.2 "Rajdhani";
+            color: #777; }
 
 #footer {
   width: 100%;
