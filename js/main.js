@@ -16,3 +16,16 @@ btnCall.onclick = function(e){
 for(let el of list){
     el.style.transform = `rotate(${deg * i}deg)`;
 }
+
+
+prev.addEventListener("click", ()=>{
+    num++;
+    frame.style.transform = `rotate(${num * deg}deg)`;
+
+    if(active == 0){
+        active = len; //7
+    }else{
+        active--;
+    }
+    activation(active, lists);
+});
