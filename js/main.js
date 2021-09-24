@@ -34,3 +34,12 @@ next.addEventListener("click", ()=>{
     num--;
     frame.style.transform = `rotate(${num * deg}deg)`;
 });
+
+function activation(index, lists){
+    // 모든 article에서 on 제거하여 비활성화
+    for(let el of lists){
+        el.classList.remove("on");
+    }
+
+    lists[index].classList.add("on");
+}
