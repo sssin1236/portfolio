@@ -561,14 +561,14 @@ a {
       height: 1px;
       background: #fff;
       position: absolute;
-      top: 0%;
+      bottom: 0%;
       left: 75%;
-      transform-origin: left center;
+      transform-origin: right center;
       transform: rotate(180deg);
       transition: 0.5s; }
     #visual .btnPrev:hover span {
       opacity: 0;
-      transform: translateY(100%); }
+      transform: translateX(100%); }
     #visual .btnPrev:hover::before {
       transform: rotate(-60deg); }
     #visual .btnPrev:hover::after {
