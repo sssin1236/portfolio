@@ -29,3 +29,8 @@ prev.addEventListener("click", ()=>{
     }
     activation(active, lists);
 });
+
+next.addEventListener("click", ()=>{
+    num--;
+    frame.style.transform = `rotate(${num * deg}deg)`;
+});
