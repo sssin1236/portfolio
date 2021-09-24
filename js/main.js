@@ -15,6 +15,13 @@ btnCall.onclick = function(e){
 
 for(let el of list){
     el.style.transform = `rotate(${deg * i}deg)`;
+
+    play.addEventListener("click", e=>{
+        // play 버튼부터 .pic을 찾아섯 클래스 on을 추가하여 활성화
+        e.currentTarget.closest("article").querySelector(".pic").classList.add("on");
+        // play 버튼부터 audio 요소를 찾아서 음악재생
+        e.currentTarget.closest("article").querySelector("audio").play();
+    });
 }
 
 
