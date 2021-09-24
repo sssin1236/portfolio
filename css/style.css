@@ -515,7 +515,11 @@ a {
           bottom: 50%;
           left: -120px;
           background: #111;
+          opacity: 0;
           transition: all 1s; }
+          #visual section article .inner .txt.on {
+            opacity: 0.9;
+            transform: scale(1.1); }
           #visual section article .inner .txt h1 {
             font: bold 24px/1 "Rajdhani";
             color: #ccc;
@@ -523,6 +527,98 @@ a {
           #visual section article .inner .txt p {
             font: 15px/1.2 "Rajdhani";
             color: #777; }
+  #visual .btnPrev {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    cursor: pointer; }
+    #visual .btnPrev span {
+      font: 11px/1 'arial';
+      color: #fff;
+      opacity: 1;
+      transition: 0.5s; }
+    #visual .btnPrev::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 0%;
+      left: 75%;
+      transform-origin: left center;
+      transform: rotate(-180deg);
+      transition: 0.5s; }
+    #visual .btnPrev::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 0%;
+      left: 75%;
+      transform-origin: left center;
+      transform: rotate(180deg);
+      transition: 0.5s; }
+    #visual .btnPrev:hover span {
+      opacity: 0;
+      transform: translateY(100%); }
+    #visual .btnPrev:hover::before {
+      transform: rotate(-60deg); }
+    #visual .btnPrev:hover::after {
+      transform: rotate(60deg); }
+  #visual .btnNext {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 15%;
+    left: 60%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    cursor: pointer; }
+    #visual .btnNext span {
+      font: 11px/1 'arial';
+      color: #fff;
+      opacity: 1;
+      transition: 0.5s; }
+    #visual .btnNext::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform-origin: right center;
+      transform: rotate(180deg);
+      transition: 0.5s; }
+    #visual .btnNext::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      bottom: 50%;
+      left: 0;
+      transform-origin: right center;
+      transform: rotate(-180deg);
+      transition: 0.5s; }
+    #visual .btnNext:hover span {
+      opacity: 0;
+      transform: translateX(-100%); }
+    #visual .btnNext:hover::before {
+      transform: rotate(30deg); }
+    #visual .btnNext:hover::after {
+      transform: rotate(-30deg); }
 
 #footer {
   width: 100%;

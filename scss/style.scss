@@ -253,7 +253,13 @@
                     position: absolute;
                     bottom: 50%; left: -120px;
                     background: #111;
+                    opacity: 0;
                     transition: all 1s;
+
+                    &.on{
+                        opacity: 0.9;
+                        transform: scale(1.1);
+                    }
 
                     h1{
                         font: bold 24px/1 $mainFon;
@@ -267,6 +273,120 @@
                     }
                 }
             }
+        }
+    }
+
+    .btnPrev{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 15%; left: 65%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        cursor: pointer;
+
+        span{
+            font: 11px/1 'arial';
+            color: #fff;
+            opacity: 1; 
+            transition: 0.5s;       
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 0%; left: 75%;
+            transform-origin: left center;
+            transform: rotate(-180deg);
+            transition: 0.5s;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 0%; left: 75%;
+            transform-origin: left center;
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+
+        &:hover span{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        &:hover::before{
+            transform: rotate(-60deg);
+        }
+
+        &:hover::after{
+            transform: rotate(60deg);
+        }
+    }
+
+    .btnNext{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        bottom: 15%; left: 60%;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        cursor: pointer;
+
+        span{
+            font: 11px/1 'arial';
+            color: #fff;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 50%; left: 0;
+            transform-origin: right center;
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: 50%; left: 0;
+            transform-origin: right center;
+            transform: rotate(-180deg);
+            transition: 0.5s; 
+        }
+
+        &:hover span{
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        &:hover::before{
+            transform: rotate(30deg);
+        }
+
+        &:hover::after{
+            transform: rotate(-30deg);
         }
     }
 }
