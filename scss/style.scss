@@ -247,7 +247,7 @@
                     }
                 }
 
-                .txt{
+                #txt{
                     width: 70%;
                     padding: 30px 20px;
                     position: absolute;
@@ -258,7 +258,6 @@
 
                     &.on{
                         opacity: 0.9;
-                        transform: scale(1.1);
                     }
 
                     h1{
@@ -280,7 +279,7 @@
         width: 60px;
         height: 60px;
         position: absolute;
-        top: 19%; left: 65%;
+        top: 17%; left: 65%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -338,7 +337,7 @@
         width: 60px;
         height: 60px;
         position: absolute;
-        bottom: 15%; left: 65%;
+        bottom: 17%; left: 65%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -359,7 +358,7 @@
             height: 1px;
             background: #fff;
             position: absolute;
-            top: 100%; left: 0;
+            top: 90%; left: 0;
             transform-origin: center center;
             transform: rotate(180deg);
             transition: 0.5s;
@@ -372,7 +371,7 @@
             height: 1px;
             background: #fff;
             position: absolute;
-            bottom: 0%; left: 0;
+            bottom: 10%; left: 0;
             transform-origin: center center;
             transform: rotate(-180deg);
             transition: 0.5s; 

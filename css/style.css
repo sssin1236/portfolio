@@ -508,7 +508,7 @@ a {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-        #visual section article .inner .txt {
+        #visual section article .inner #txt {
           width: 70%;
           padding: 30px 20px;
           position: absolute;
@@ -517,21 +517,20 @@ a {
           background: #111;
           opacity: 0;
           transition: all 1s; }
-          #visual section article .inner .txt.on {
-            opacity: 0.9;
-            transform: scale(1.1); }
-          #visual section article .inner .txt h1 {
+          #visual section article .inner #txt.on {
+            opacity: 0.9; }
+          #visual section article .inner #txt h1 {
             font: bold 24px/1 "Rajdhani";
             color: #ccc;
             margin-bottom: 20px; }
-          #visual section article .inner .txt p {
+          #visual section article .inner #txt p {
             font: 15px/1.2 "Rajdhani";
             color: #777; }
   #visual .btnPrev {
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 19%;
+    top: 17%;
     left: 65%;
     display: flex;
     align-items: center;
@@ -578,7 +577,7 @@ a {
     width: 60px;
     height: 60px;
     position: absolute;
-    bottom: 15%;
+    bottom: 17%;
     left: 65%;
     display: flex;
     align-items: center;
@@ -597,7 +596,7 @@ a {
       height: 1px;
       background: #fff;
       position: absolute;
-      top: 100%;
+      top: 90%;
       left: 0;
       transform-origin: center center;
       transform: rotate(180deg);
@@ -609,7 +608,7 @@ a {
       height: 1px;
       background: #fff;
       position: absolute;
-      bottom: 0%;
+      bottom: 10%;
       left: 0;
       transform-origin: center center;
       transform: rotate(-180deg);
