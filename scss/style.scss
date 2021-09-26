@@ -325,11 +325,11 @@
         }
 
         &:hover::before{
-            transform: rotate(-60deg);
+            transform: rotate(60deg);
         }
 
         &:hover::after{
-            transform: rotate(60deg);
+            transform: rotate(-60deg);
         }
     }
 

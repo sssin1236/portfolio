@@ -570,9 +570,9 @@ a {
       opacity: 0;
       transform: translateX(100%); }
     #visual .btnPrev:hover::before {
-      transform: rotate(-60deg); }
-    #visual .btnPrev:hover::after {
       transform: rotate(60deg); }
+    #visual .btnPrev:hover::after {
+      transform: rotate(-60deg); }
   #visual .btnNext {
     width: 60px;
     height: 60px;
