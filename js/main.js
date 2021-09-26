@@ -4,13 +4,13 @@ const frame = document.querySelector("section");
 const lists = frame.querySelectorAll("article");
 const prev = document.querySelector(".btnPrev");
 const next = document.querySelector(".btnNext");
+const text = document.querySelector(".inner #txt");
 const deg = -45;
 const len = lists.length-1;
 
 let i = 0;
 let num = 0;
 let active = 0;
-
 
 btnCall.onclick = function(e){
     e.preventDefault();

@@ -210,6 +210,11 @@
                     opacity: 0.9;
                     background: rgba(69, 69, 69, 0.817);
                 }
+
+                .inner .txt{
+                    opacity: 0.9;
+                    left: -120px;
+                }
             }
 
             .inner{
@@ -247,18 +252,16 @@
                     }
                 }
 
-                #txt{
+                .txt{
                     width: 70%;
                     padding: 30px 20px;
                     position: absolute;
-                    bottom: 50%; left: -120px;
+                    bottom: 50%; left: 0px;
                     background: #111;
                     opacity: 0;
                     transition: all 1s;
 
-                    &.on{
-                        opacity: 0.9;
-                    }
+                    
 
                     h1{
                         font: bold 24px/1 $mainFon;

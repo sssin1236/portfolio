@@ -477,6 +477,9 @@ a {
         transform: scale(1.1);
         opacity: 0.9;
         background: rgba(69, 69, 69, 0.817); }
+      #visual section article.on .inner .txt {
+        opacity: 0.9;
+        left: -120px; }
       #visual section article .inner {
         width: 100%;
         height: 100%;
@@ -508,22 +511,20 @@ a {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-        #visual section article .inner #txt {
+        #visual section article .inner .txt {
           width: 70%;
           padding: 30px 20px;
           position: absolute;
           bottom: 50%;
-          left: -120px;
+          left: 0px;
           background: #111;
           opacity: 0;
           transition: all 1s; }
-          #visual section article .inner #txt.on {
-            opacity: 0.9; }
-          #visual section article .inner #txt h1 {
+          #visual section article .inner .txt h1 {
             font: bold 24px/1 "Rajdhani";
             color: #ccc;
             margin-bottom: 20px; }
-          #visual section article .inner #txt p {
+          #visual section article .inner .txt p {
             font: 15px/1.2 "Rajdhani";
             color: #777; }
   #visual .btnPrev {
