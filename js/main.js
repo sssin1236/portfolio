@@ -24,3 +24,23 @@ for(let el of lists){
     i++;
 }
 
+prev.addEventListener("click", ()=>{
+    num++;
+    frame.style.transform = `rotate(${num * deg}deg)`;
+
+    if(active == 0){
+        active = len;
+    }else{
+        active--;
+    }
+
+    activation(active, lists);
+});
+
+function activation(index, lists){
+    for(let el of lists){
+        el.classList.remove("on");
+    }
+
+    lists[index].classList.add("on");
+}
