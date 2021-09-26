@@ -37,6 +37,19 @@ prev.addEventListener("click", ()=>{
     activation(active, lists);
 });
 
+next.addEventListener("click", ()=>{
+    num--;
+    frame.style.transform = `rotate(${num * deg}deg)`;
+
+    if(active == 7){
+        active = 0;
+    }else{
+        active++;
+    }
+
+    activation(active, lists);
+});
+
 function activation(index, lists){
     for(let el of lists){
         el.classList.remove("on");
