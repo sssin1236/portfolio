@@ -562,7 +562,7 @@ a {
       height: 1px;
       background: #fff;
       position: absolute;
-      top: 10%;
+      bottom: 90%;
       left: 0%;
       transform-origin: center center;
       transform: rotate(180deg);
@@ -597,9 +597,9 @@ a {
       height: 1px;
       background: #fff;
       position: absolute;
-      top: 50%;
+      top: 100%;
       left: 0;
-      transform-origin: right center;
+      transform-origin: center center;
       transform: rotate(180deg);
       transition: 0.5s; }
     #visual .btnNext::after {
@@ -609,18 +609,18 @@ a {
       height: 1px;
       background: #fff;
       position: absolute;
-      bottom: 50%;
+      bottom: 0%;
       left: 0;
-      transform-origin: right center;
+      transform-origin: center center;
       transform: rotate(-180deg);
       transition: 0.5s; }
     #visual .btnNext:hover span {
       opacity: 0;
-      transform: translateX(-100%); }
+      transform: translateY(-100%); }
     #visual .btnNext:hover::before {
-      transform: rotate(30deg); }
+      transform: translateX(-15px) rotate(60deg); }
     #visual .btnNext:hover::after {
-      transform: rotate(-30deg); }
+      transform: translateX(15px) rotate(-60deg); }
 
 #footer {
   width: 100%;
