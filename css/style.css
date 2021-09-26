@@ -531,10 +531,11 @@ a {
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 15%;
+    top: 19%;
     left: 65%;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: left;
     cursor: pointer; }
     #visual .btnPrev span {
@@ -549,9 +550,9 @@ a {
       height: 1px;
       background: #fff;
       position: absolute;
-      top: 0%;
-      left: 75%;
-      transform-origin: left center;
+      top: 10%;
+      left: 0%;
+      transform-origin: center center;
       transform: rotate(-180deg);
       transition: 0.5s; }
     #visual .btnPrev::after {
@@ -561,26 +562,27 @@ a {
       height: 1px;
       background: #fff;
       position: absolute;
-      bottom: 0%;
-      left: 75%;
-      transform-origin: right center;
+      top: 10%;
+      left: 0%;
+      transform-origin: center center;
       transform: rotate(180deg);
       transition: 0.5s; }
     #visual .btnPrev:hover span {
       opacity: 0;
-      transform: translateX(100%); }
+      transform: translateY(100%); }
     #visual .btnPrev:hover::before {
-      transform: rotate(60deg); }
+      transform: translateX(-15px) rotate(-60deg); }
     #visual .btnPrev:hover::after {
-      transform: rotate(-60deg); }
+      transform: translateX(15px) rotate(60deg); }
   #visual .btnNext {
     width: 60px;
     height: 60px;
     position: absolute;
     bottom: 15%;
-    left: 60%;
+    left: 65%;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-align: right;
     cursor: pointer; }
     #visual .btnNext span {

@@ -280,9 +280,10 @@
         width: 60px;
         height: 60px;
         position: absolute;
-        top: 15%; left: 65%;
+        top: 19%; left: 65%;
         display: flex;
         align-items: center;
+        justify-content: center;
         text-align: left;
         cursor: pointer;
 
@@ -300,8 +301,8 @@
             height: 1px;
             background: #fff;
             position: absolute;
-            top: 0%; left: 75%;
-            transform-origin: left center;
+            top: 10%; left: 0%;
+            transform-origin: center center;
             transform: rotate(-180deg);
             transition: 0.5s;
         }
@@ -313,23 +314,23 @@
             height: 1px;
             background: #fff;
             position: absolute;
-            bottom: 0%; left: 75%;
-            transform-origin: right center;
+            top: 10%; left: 0%;
+            transform-origin: center center;
             transform: rotate(180deg);
             transition: 0.5s;
         }
 
         &:hover span{
             opacity: 0;
-            transform: translateX(100%);
+            transform: translateY(100%);
         }
 
         &:hover::before{
-            transform: rotate(60deg);
+            transform: translateX(-15px) rotate(-60deg);
         }
 
         &:hover::after{
-            transform: rotate(-60deg);
+            transform: translateX(15px) rotate(60deg);
         }
     }
 
@@ -337,9 +338,10 @@
         width: 60px;
         height: 60px;
         position: absolute;
-        bottom: 15%; left: 60%;
+        bottom: 15%; left: 65%;
         display: flex;
         align-items: center;
+        justify-content: center;
         text-align: right;
         cursor: pointer;
 
