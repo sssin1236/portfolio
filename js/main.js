@@ -125,3 +125,21 @@ $close1.on("click", function(e){
 
     $(".btns li a").removeClass("on");
 });
+
+$btn2.on("click", function(e){
+    e.preventDefault();
+
+    let isOn = $(this).hasClass("on");
+    if(isOn) return;
+
+    if(isDone){
+        closeIntro();
+        closeWrap1();
+        openWrap2();
+
+        $(".btns li a").removeClass("on");
+        $(this).addClass("on");
+
+        isDone = false;
+    }
+})
