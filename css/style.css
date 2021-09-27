@@ -463,8 +463,8 @@ a {
     height: 300px;
     position: absolute;
     top: 50%;
-    left: 120%;
-    margin-top: -150px;
+    left: 110%;
+    margin-top: -200px;
     margin-left: -200px;
     transition: 1s; }
     #visual section article {
@@ -559,8 +559,8 @@ a {
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 17%;
-    left: 65%;
+    top: 40%;
+    right: 18%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -606,8 +606,8 @@ a {
     width: 60px;
     height: 60px;
     position: absolute;
-    bottom: 17%;
-    left: 65%;
+    top: 45%;
+    right: 18%;
     display: flex;
     align-items: center;
     justify-content: center;
