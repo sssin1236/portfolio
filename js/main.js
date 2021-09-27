@@ -57,3 +57,20 @@ function activation(index, lists){
 
     lists[index].classList.add("on");
 }
+
+
+
+function openWrap1(){
+    $top.animate({width : "100%"}, speed, function(){
+        $right.animate({height : "100%"}, speed, function(){
+            $bottom.animate({width : "100%"}, speed, function(){
+                $left.animate({height : "100%"}, speed, function(){
+                    $content.fadeIn(speed/2, function(){
+                        $close1.animate({right : 30, opacity : 1}, speed);
+                        isDone = true;
+                    })
+                });
+            });
+        });
+    });  
+}
