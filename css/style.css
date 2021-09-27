@@ -458,13 +458,38 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover; }
+  #visual .col {
+    width: 20px;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around; }
+    #visual .col::before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 100%;
+      background: rgba(238, 238, 238, 0.582);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -1px;
+      z-index: 1; }
+    #visual .col i {
+      z-index: 2;
+      text-align: center;
+      color: rgba(238, 238, 238, 0.582); }
   #visual section {
     width: 550px;
-    height: 400px;
+    height: 350px;
     position: absolute;
     top: 55%;
     left: 110%;
-    margin-top: -250px;
+    margin-top: -230px;
     margin-left: -275px;
     transition: 1s; }
     #visual section article {
@@ -539,7 +564,7 @@ a {
           width: 70%;
           padding: 30px 20px;
           position: absolute;
-          bottom: 50%;
+          bottom: 65%;
           left: 0px;
           background: #eee;
           opacity: 0; }
@@ -601,7 +626,7 @@ a {
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 55%;
+    top: 53%;
     right: 15%;
     display: flex;
     align-items: center;

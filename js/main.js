@@ -79,8 +79,8 @@ function openWrap1(){
     $top.animate({width : "60%"}, speed, function(){
         $right.animate({height : "100%"}, speed, function(){
             $bottom.animate({width : "100%"}, speed, function(){
-                $left.animate({height : "50%"}, speed, function(){
-                    $txt.animate({opacity : 0.9, left : "-120px"}, speed);
+                $left.animate({height : "65%"}, speed, function(){
+                    $txt.animate({opacity : 0.9, left : "-130px"}, speed);
                 });
             });
         });
