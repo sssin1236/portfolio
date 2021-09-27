@@ -59,24 +59,28 @@ function activation(index, lists){
 }
 
 
-
 const $article = $("article");
 const $txt = $(".txt");
 const $top = $(".line1");
 const $right = $(".line2");
 const $bottom = $(".line3");
-const $left = $("line4");
+const $left = $(".line4");
 
+let speed = 700;
+let isOn = $article.hasClass("on");
+
+if(isOn){
+    openWrap1();
+}else{
+    closeWrap1();
+}
 
 function openWrap1(){
-    $top.animate({width : "100%"}, speed, function(){
+    $top.animate({width : "60%"}, speed, function(){
         $right.animate({height : "100%"}, speed, function(){
             $bottom.animate({width : "100%"}, speed, function(){
-                $left.animate({height : "100%"}, speed, function(){
-                    $content.fadeIn(speed/2, function(){
-                        $close1.animate({right : 30, opacity : 1}, speed);
-                        isDone = true;
-                    })
+                $left.animate({height : "50%"}, speed, function(){
+                    $txt.animate({opacity : 0.9, left : "-120px"}, speed);
                 });
             });
         });
@@ -93,53 +97,3 @@ function closeWrap1(){
     });
 }
 
-function openIntro(){
-    $intro.addClass("on");
-}
-
-function closeIntro(){
-    $intro.removeClass("on");
-}
-
-btn1.on("click", function(e){
-    e.preventDefault();
-
-    if(isOn) return;
-    
-    if(isDone){
-        closeIntro();
-        closeWrap2();
-        openWrap1();
-
-        $(".btns li a").removeClass("on");
-        $(this).addClass("on");
-
-        isDone = false;
-    }
-});
-
-$close1.on("click", function(e){
-    e.preventDefault();
-    openIntro();
-    closeWrap1();
-
-    $(".btns li a").removeClass("on");
-});
-
-$btn2.on("click", function(e){
-    e.preventDefault();
-
-    let isOn = $(this).hasClass("on");
-    if(isOn) return;
-
-    if(isDone){
-        closeIntro();
-        closeWrap1();
-        openWrap2();
-
-        $(".btns li a").removeClass("on");
-        $(this).addClass("on");
-
-        isDone = false;
-    }
-})

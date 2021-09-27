@@ -477,9 +477,6 @@ a {
         transform: scale(1.1);
         opacity: 0.9;
         background: rgba(69, 69, 69, 0.817); }
-      #visual section article.on .inner .txt {
-        opacity: 0.9;
-        left: -120px; }
       #visual section article .inner {
         width: 100%;
         height: 100%;
@@ -505,29 +502,28 @@ a {
           #visual section article .inner .pic video {
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            border-radius: 10px; }
+            object-fit: cover; }
           #visual section article .inner .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
         #visual section article .inner .line1 {
           background: #eee;
-          width: 100%;
+          width: 0%;
           height: 2px;
           position: absolute;
           top: 0;
-          left: 0; }
+          left: 40%; }
         #visual section article .inner .line2 {
           background: #eee;
           width: 2px;
-          height: 100%;
+          height: 0%;
           position: absolute;
           top: 0;
           right: 0; }
         #visual section article .inner .line3 {
           background: #eee;
-          width: 100%;
+          width: 0%;
           height: 2px;
           position: absolute;
           bottom: 0;
@@ -535,7 +531,7 @@ a {
         #visual section article .inner .line4 {
           background: #eee;
           width: 2px;
-          height: 100%;
+          height: 0%;
           position: absolute;
           bottom: 0;
           left: 0; }
@@ -545,12 +541,11 @@ a {
           position: absolute;
           bottom: 50%;
           left: 0px;
-          background: #111;
-          opacity: 0;
-          transition: all 1s; }
+          background: #eee;
+          opacity: 0; }
           #visual section article .inner .txt h1 {
             font: bold 24px/1 "Rajdhani";
-            color: #ccc;
+            color: #555;
             margin-bottom: 20px; }
           #visual section article .inner .txt p {
             font: 15px/1.2 "Rajdhani";
