@@ -100,3 +100,20 @@ function openIntro(){
 function closeIntro(){
     $intro.removeClass("on");
 }
+
+btn1.on("click", function(e){
+    e.preventDefault();
+
+    if(isOn) return;
+    
+    if(isDone){
+        closeIntro();
+        closeWrap2();
+        openWrap1();
+
+        $(".btns li a").removeClass("on");
+        $(this).addClass("on");
+
+        isDone = false;
+    }
+});
