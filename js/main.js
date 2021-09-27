@@ -117,3 +117,11 @@ btn1.on("click", function(e){
         isDone = false;
     }
 });
+
+$close1.on("click", function(e){
+    e.preventDefault();
+    openIntro();
+    closeWrap1();
+
+    $(".btns li a").removeClass("on");
+});
