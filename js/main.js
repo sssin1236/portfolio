@@ -74,3 +74,13 @@ function openWrap1(){
         });
     });  
 }
+
+function closeWrap1(){
+    $close1.animate({right : 0, opacity : 0}, speed/2);
+    $content.fadeOut(speed/2, function(){
+        $top.animate({width : 0}, speed/2);
+        $right.animate({height : 0}, speed/2);
+        $bottom.animate({width : 0}, speed/2);
+        $left.animate({height : 0}, speed/2);
+    });
+}
