@@ -60,6 +60,14 @@ function activation(index, lists){
 
 
 
+const $article = $("article");
+const $txt = $(".txt");
+const $top = $(".line1");
+const $right = $(".line2");
+const $bottom = $(".line3");
+const $left = $("line4");
+
+
 function openWrap1(){
     $top.animate({width : "100%"}, speed, function(){
         $right.animate({height : "100%"}, speed, function(){
