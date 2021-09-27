@@ -4,7 +4,7 @@ const frame = document.querySelector("section");
 const lists = frame.querySelectorAll("article");
 const prev = document.querySelector(".btnPrev");
 const next = document.querySelector(".btnNext");
-const text = document.querySelector(".wrap .txt");
+const text = document.querySelector(".inner .txt");
 const deg = -45;
 const len = lists.length-1;
 
@@ -60,7 +60,7 @@ function activation(index, lists){
 
 
 const $article = $("article");
-const $txt = $(".txt2");
+const $txt = $(".txt");
 const $top = $(".line1");
 const $right = $(".line2");
 const $bottom = $(".line3");
