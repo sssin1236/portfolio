@@ -96,3 +96,7 @@ function closeWrap1(){
 function openIntro(){
     $intro.addClass("on");
 }
+
+function closeIntro(){
+    $intro.removeClass("on");
+}
