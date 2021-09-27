@@ -330,6 +330,192 @@ a {
 
 .member .sub_visual {
   background: url(../../img/unsplash.jpg) no-repeat bottom/cover; }
+.member section {
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  margin-top: -200px;
+  margin-left: -200px;
+  transition: 1s; }
+  .member section article {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .member section article.on .inner {
+      transform: scale(1.1);
+      opacity: 0.9;
+      background: rgba(69, 69, 69, 0.817); }
+    .member section article .inner {
+      width: 100%;
+      height: 100%;
+      background: rgba(69, 69, 69, 0.653);
+      border-radius: 10px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      opacity: 0.6;
+      transform: scale(0.8);
+      transition: all 1s; }
+      .member section article .inner .pic {
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .member section article .inner .pic video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .member section article .inner .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .member section article .inner .line1 {
+        background: #eee;
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 40%; }
+      .member section article .inner .line2 {
+        background: #eee;
+        width: 2px;
+        height: 0%;
+        position: absolute;
+        top: 0;
+        right: 0; }
+      .member section article .inner .line3 {
+        background: #eee;
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+      .member section article .inner .line4 {
+        background: #eee;
+        width: 2px;
+        height: 0%;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      .member section article .inner .txt2 {
+        width: 70%;
+        padding: 30px 20px;
+        position: absolute;
+        bottom: 50%;
+        left: 0px;
+        background: #eee;
+        opacity: 0; }
+        .member section article .inner .txt2 h1 {
+          font: bold 24px/1 "Rajdhani";
+          color: #555;
+          margin-bottom: 20px; }
+        .member section article .inner .txt2 p {
+          font: 15px/1.2 "Rajdhani";
+          color: #777; }
+.member .btnPrev {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 40%;
+  right: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  cursor: pointer; }
+  .member .btnPrev span {
+    font: 11px/1 'arial';
+    color: #fff;
+    opacity: 1;
+    transition: 0.5s; }
+  .member .btnPrev::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    transform-origin: center center;
+    transform: rotate(-180deg);
+    transition: 0.5s; }
+  .member .btnPrev::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 90%;
+    left: 0%;
+    transform-origin: center center;
+    transform: rotate(180deg);
+    transition: 0.5s; }
+  .member .btnPrev:hover span {
+    opacity: 0;
+    transform: translateY(100%); }
+  .member .btnPrev:hover::before {
+    transform: translateX(-15px) rotate(-60deg); }
+  .member .btnPrev:hover::after {
+    transform: translateX(15px) rotate(60deg); }
+.member .btnNext {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 45%;
+  right: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  cursor: pointer; }
+  .member .btnNext span {
+    font: 11px/1 'arial';
+    color: #fff;
+    opacity: 1;
+    transition: 0.5s; }
+  .member .btnNext::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transform-origin: center center;
+    transform: rotate(180deg);
+    transition: 0.5s; }
+  .member .btnNext::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    transform-origin: center center;
+    transform: rotate(-180deg);
+    transition: 0.5s; }
+  .member .btnNext:hover span {
+    opacity: 0;
+    transform: translateY(-100%); }
+  .member .btnNext:hover::before {
+    transform: translateX(-15px) rotate(60deg); }
+  .member .btnNext:hover::after {
+    transform: translateX(15px) rotate(-60deg); }
 
 #header {
   width: 100%;
@@ -458,7 +644,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  #visual section {
+  #visual .inner section {
     width: 450px;
     height: 300px;
     position: absolute;
@@ -467,17 +653,17 @@ a {
     margin-top: -200px;
     margin-left: -200px;
     transition: 1s; }
-    #visual section article {
+    #visual .inner section article {
       width: 100%;
       height: 100%;
       position: absolute;
       left: 0;
       top: 0; }
-      #visual section article.on .inner {
+      #visual .inner section article.on .inner {
         transform: scale(1.1);
         opacity: 0.9;
         background: rgba(69, 69, 69, 0.817); }
-      #visual section article .inner {
+      #visual .inner section article .inner {
         width: 100%;
         height: 100%;
         background: rgba(69, 69, 69, 0.653);
@@ -490,7 +676,7 @@ a {
         opacity: 0.6;
         transform: scale(0.8);
         transition: all 1s; }
-        #visual section article .inner .pic {
+        #visual .inner section article .inner .pic {
           width: 100%;
           height: 100%;
           border-radius: 5%;
@@ -499,43 +685,43 @@ a {
           display: flex;
           justify-content: space-between;
           align-items: center; }
-          #visual section article .inner .pic video {
+          #visual .inner section article .inner .pic video {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-          #visual section article .inner .pic img {
+          #visual .inner section article .inner .pic img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-        #visual section article .inner .line1 {
+        #visual .inner section article .inner .line1 {
           background: #eee;
           width: 0%;
           height: 2px;
           position: absolute;
           top: 0;
           left: 40%; }
-        #visual section article .inner .line2 {
+        #visual .inner section article .inner .line2 {
           background: #eee;
           width: 2px;
           height: 0%;
           position: absolute;
           top: 0;
           right: 0; }
-        #visual section article .inner .line3 {
+        #visual .inner section article .inner .line3 {
           background: #eee;
           width: 0%;
           height: 2px;
           position: absolute;
           bottom: 0;
           right: 0; }
-        #visual section article .inner .line4 {
+        #visual .inner section article .inner .line4 {
           background: #eee;
           width: 2px;
           height: 0%;
           position: absolute;
           bottom: 0;
           left: 0; }
-        #visual section article .inner .txt {
+        #visual .inner section article .inner .txt {
           width: 70%;
           padding: 30px 20px;
           position: absolute;
@@ -543,11 +729,11 @@ a {
           left: 0px;
           background: #eee;
           opacity: 0; }
-          #visual section article .inner .txt h1 {
+          #visual .inner section article .inner .txt h1 {
             font: bold 24px/1 "Rajdhani";
             color: #555;
             margin-bottom: 20px; }
-          #visual section article .inner .txt p {
+          #visual .inner section article .inner .txt p {
             font: 15px/1.2 "Rajdhani";
             color: #777; }
   #visual .btnPrev {

@@ -4,4 +4,235 @@
     .sub_visual{
         background: url(../../img/unsplash.jpg) no-repeat bottom/cover;
     }
+
+    section{
+        width: 450px;
+        height: 300px;
+        position: absolute;
+        top: 50%; left: 110%;
+        margin-top: -200px;
+        margin-left: -200px;
+        transition: 1s;
+
+        article{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0; top: 0;
+
+            &.on{
+                .inner{
+                    transform: scale(1.1);
+                    opacity: 0.9;
+                    background: rgba(69, 69, 69, 0.817);
+                }
+
+                // .inner .txt{
+                //     opacity: 0.9;
+                //     left: -120px;
+                // }
+            }
+
+            .inner{
+                width: 100%;
+                height: 100%;
+                background: rgba(69, 69, 69, 0.653);
+                border-radius: 10px;
+                box-shadow: 10px 10px 20px rgba(0,0,0, 0.1);
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                opacity: 0.6;
+                transform: scale(0.8);
+                transition: all 1s;
+
+                .pic{
+                    width: 100%; height: 100%;
+                    border-radius: 5%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    video{
+                        width: 100%; height: 100%;
+                        object-fit: cover;
+                    }
+
+                    img{
+                        width: 100%; height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .line1{
+                    background: #eee;
+                    width: 0%; height: 2px;
+                    position: absolute;
+                    top: 0; left: 40%;
+                }
+
+                .line2{
+                    background: #eee;
+                    width: 2px; height: 0%;
+                    position: absolute;
+                    top: 0; right: 0;
+                }
+
+                .line3{
+                    background: #eee;
+                    width: 0%; height: 2px;
+                    position: absolute;
+                    bottom: 0; right: 0;
+                }
+
+                .line4{
+                    background: #eee;
+                    width: 2px; height: 0%;
+                    position: absolute;
+                    bottom: 0; left: 0;
+                }
+
+                .txt2{
+                    width: 70%;
+                    padding: 30px 20px;
+                    position: absolute;
+                    bottom: 50%; left: 0px;
+                    background: #eee;
+                    opacity: 0;
+
+                    
+
+                    h1{
+                        font: bold 24px/1 $mainFon;
+                        color: #555;
+                        margin-bottom: 20px;
+                    }
+
+                    p{
+                        font: 15px/1.2 $mainFon;
+                        color: #777;
+                    }
+                }
+            }
+        }
+    }
+
+    .btnPrev{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 40%; right: 18%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        cursor: pointer;
+
+        span{
+            font: 11px/1 'arial';
+            color: #fff;
+            opacity: 1; 
+            transition: 0.5s;       
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 10%; left: 0%;
+            transform-origin: center center;
+            transform: rotate(-180deg);
+            transition: 0.5s;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: 90%; left: 0%;
+            transform-origin: center center;
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+
+        &:hover span{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+
+        &:hover::before{
+            transform: translateX(-15px) rotate(-60deg);
+        }
+
+        &:hover::after{
+            transform: translateX(15px) rotate(60deg);
+        }
+    }
+
+    .btnNext{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 45%; right: 18%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+        cursor: pointer;
+
+        span{
+            font: 11px/1 'arial';
+            color: #fff;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        &::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            top: 90%; left: 0;
+            transform-origin: center center;
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: 10%; left: 0;
+            transform-origin: center center;
+            transform: rotate(-180deg);
+            transition: 0.5s; 
+        }
+
+        &:hover span{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        &:hover::before{
+            transform: translateX(-15px) rotate(60deg);
+        }
+
+        &:hover::after{
+            transform: translateX(15px) rotate(-60deg);
+        }
+    }
 }
