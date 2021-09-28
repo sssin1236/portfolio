@@ -196,7 +196,7 @@
         display: flex;
         flex-direction: column;
         align-content: center;
-        justify-content: space-around;
+        justify-content: space-between;
 
         &::before{
             content: '';
@@ -207,7 +207,6 @@
             top: 0; left: 50%;
             margin-left: -1px;
             z-index: 1;
-
         }
 
         i{
