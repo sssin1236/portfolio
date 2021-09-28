@@ -198,22 +198,12 @@
         align-content: center;
         justify-content: space-between;
 
-        // &::before{
-        //     content: '';
-        //     display: block;
-        //     width: 2px; height: 100%;
-        //     background: rgba(238, 238, 238, 0.582);
-        //     position: absolute;
-        //     top: 0; left: 50%;
-        //     margin-left: -1px;
-        //     z-index: 1;
-        // }
-
         span{
             font: 13px/1 $mainFon;
             color: rgba(238, 238, 238, 0.82);
             text-align: left;
             position: relative;
+            transition: 0.5s;
 
             &.on{
                 font-size: 17px;
@@ -222,6 +212,10 @@
                 i{
                     font-size: 13px;
                     color: #eee;
+                }
+
+                div{
+                    height: 151px;
                 }
             }
 
@@ -266,11 +260,12 @@
             }
 
             div{
-                width: 2px; height: 151px;
+                width: 2px; height: 0px;
                 background: #eee;
                 position: absolute;
-                top: 13px; left: 8px;
+                top: -150px; left: 8px;
                 margin-left: -1px;
+                transition: 0.5s;
             }
 
             
@@ -283,6 +278,7 @@
                 text-align: center;
                 color: rgba(238, 238, 238, 0.582);
                 z-index: 2;
+                transition: 0.5s;
             }
         }
     }

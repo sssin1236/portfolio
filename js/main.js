@@ -109,4 +109,3 @@ function closeWrap1(){
         $left.animate({height : 0}, speed/2);
     });
 }
-
