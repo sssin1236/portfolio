@@ -7,6 +7,7 @@ const next = document.querySelector(".btnNext");
 const text = document.querySelector(".inner .txt");
 const line = document.querySelector(".col");
 const dots = line.querySelectorAll("span");
+const col = document.querySelector("span div");
 const deg = -72;
 const len = lists.length-1;
 
@@ -70,7 +71,6 @@ function activation2(index, dots){
 
     dots[index].classList.add("on");
 }
-
 
 const $article = $("article");
 const $txt = $(".txt");
