@@ -463,20 +463,80 @@ a {
     height: 70%;
     position: absolute;
     top: 20%;
-    left: 50px;
-    background: #111;
+    left: 100px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-between; }
     #visual .col span {
-      font: 15px/1 "Rajdhani";
+      font: 13px/1 "Rajdhani";
       color: rgba(238, 238, 238, 0.82);
-      text-align: left; }
+      text-align: left;
+      position: relative; }
+      #visual .col span.on {
+        font-size: 17px;
+        color: #eee; }
+        #visual .col span.on i {
+          font-size: 13px;
+          color: #eee; }
+      #visual .col span:nth-of-type(1)::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 151px;
+        background: rgba(238, 238, 238, 0.582);
+        position: absolute;
+        top: 13px;
+        left: 8px;
+        margin-left: -1px; }
+      #visual .col span:nth-of-type(1)::after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 151px;
+        background: #eee;
+        position: absolute;
+        top: 13px;
+        left: 8px;
+        margin-left: -1px; }
+      #visual .col span:nth-of-type(2)::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 150px;
+        background: rgba(238, 238, 238, 0.582);
+        position: absolute;
+        top: 12px;
+        left: 8px;
+        margin-left: -1px; }
+      #visual .col span:nth-of-type(3)::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 150px;
+        background: rgba(238, 238, 238, 0.582);
+        position: absolute;
+        top: 13px;
+        left: 8px;
+        margin-left: -1px; }
+      #visual .col span:nth-of-type(4)::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 150px;
+        background: rgba(238, 238, 238, 0.582);
+        position: absolute;
+        top: 13px;
+        left: 8px;
+        margin-left: -1px; }
     #visual .col i {
       display: inline-block;
       margin-right: 30px;
-      font-size: 13px;
+      width: 16px;
+      height: 16px;
+      font-size: 10px;
+      line-height: 15px;
+      text-align: center;
       color: rgba(238, 238, 238, 0.582);
       z-index: 2; }
   #visual section {

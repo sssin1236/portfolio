@@ -12,6 +12,7 @@ let i = 0;
 let num = 0;
 let active = 0;
 
+
 btnCall.onclick = function(e){
     e.preventDefault();
 
@@ -48,6 +49,7 @@ next.addEventListener("click", ()=>{
     }
 
     activation(active, lists);
+    
 });
 
 function activation(index, lists){
@@ -88,8 +90,7 @@ function openWrap1(){
 }
 
 function closeWrap1(){
-    $close1.animate({right : 0, opacity : 0}, speed/2);
-    $content.fadeOut(speed/2, function(){
+    $txt.animate({left : 0, opacity : 0}, speed/2, function(){
         $top.animate({width : 0}, speed/2);
         $right.animate({height : 0}, speed/2);
         $bottom.animate({width : 0}, speed/2);
