@@ -5,6 +5,8 @@ const lists = frame.querySelectorAll("article");
 const prev = document.querySelector(".btnPrev");
 const next = document.querySelector(".btnNext");
 const text = document.querySelector(".inner .txt");
+const line = document.querySelector(".col");
+const dots = line.querySelectorAll("span");
 const deg = -45;
 const len = lists.length-1;
 
@@ -36,6 +38,7 @@ prev.addEventListener("click", ()=>{
     }
 
     activation(active, lists);
+    activation2(active, dots);
 });
 
 next.addEventListener("click", ()=>{
@@ -49,7 +52,7 @@ next.addEventListener("click", ()=>{
     }
 
     activation(active, lists);
-    
+    activation2(active, dots);
 });
 
 function activation(index, lists){
@@ -58,6 +61,14 @@ function activation(index, lists){
     }
 
     lists[index].classList.add("on");
+}
+
+function activation2(index, dots){
+    for(let el of dots){
+        el.classList.remove("on");
+    }
+
+    dots[index].classList.add("on");
 }
 
 
@@ -76,6 +87,7 @@ if(isOn){
 }else{
     closeWrap1();
 }
+
 
 function openWrap1(){
     $top.animate({width : "60%"}, speed, function(){
