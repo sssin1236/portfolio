@@ -459,24 +459,26 @@ a {
     height: 100%;
     object-fit: cover; }
   #visual .col {
-    width: 100px;
+    width: 150px;
     height: 70%;
     position: absolute;
     top: 20%;
-    left: 100px;
+    left: 50px;
     background: #111;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-between; }
     #visual .col span {
-      text-align: center;
-      font: 18px/1 "Rajdhani";
-      color: rgba(238, 238, 238, 0.82); }
+      font: 15px/1 "Rajdhani";
+      color: rgba(238, 238, 238, 0.82);
+      text-align: left; }
     #visual .col i {
-      z-index: 2;
-      text-align: center;
-      color: rgba(238, 238, 238, 0.582); }
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 13px;
+      color: rgba(238, 238, 238, 0.582);
+      z-index: 2; }
   #visual section {
     width: 550px;
     height: 350px;
