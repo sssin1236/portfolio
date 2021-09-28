@@ -7,7 +7,7 @@ const next = document.querySelector(".btnNext");
 const text = document.querySelector(".inner .txt");
 const line = document.querySelector(".col");
 const dots = line.querySelectorAll("span");
-const deg = -45;
+const deg = -72;
 const len = lists.length-1;
 
 let i = 0;
@@ -45,7 +45,7 @@ next.addEventListener("click", ()=>{
     num--;
     frame.style.transform = `rotate(${num * deg}deg)`;
 
-    if(active == 7){
+    if(active == 4){
         active = 0;
     }else{
         active++;
