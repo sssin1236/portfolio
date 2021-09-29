@@ -705,19 +705,28 @@
     background: #efefef;
 
     
-    &.on .inner .wrap article{
-        opacity: 1;
-
-        &:nth-of-type(1){
-            transform: translateY(-30px);
+    &.on .inner{
+        h1, p{
+            transform: translateY(0);
+            opacity: 1;
         }
 
-        &:nth-of-type(2){
-            transform: translateY(50px);
-        }
 
-        &:nth-of-type(3){
-            transform: translateY(-30px);
+        .wrap article{
+            opacity: 1;
+            transition-delay: 0.5s;
+
+            &:nth-of-type(1){
+                transform: translateY(-30px);
+            }
+
+            &:nth-of-type(2){
+                transform: translateY(50px);
+            }
+
+            &:nth-of-type(3){
+                transform: translateY(-30px);
+            }
         }
     }
 
@@ -728,6 +737,9 @@
 
         h1{
             @include title($color:#111);
+            transform: translateY(50px);
+            transition: 1s;
+            opacity: 0;
 
             &::after{
                 content: '';
@@ -742,6 +754,9 @@
 
         >p{
             @include title2($color:#111);
+            transform: translateY(-50px);
+            transition: 1s;
+            opacity: 0;
         }
 
         .wrap{
@@ -756,7 +771,7 @@
                 float: left;
                 margin-right: 20px;
                 position: relative;
-                transition: 1s;
+                transition: 1.5s;
                 opacity: 0;
 
                 &:hover{ 
@@ -855,17 +870,24 @@
     padding: 200px 0;
     background: #111;
 
-    &.on .inner .wrap article{
-        opacity: 1;
-
-        &:first-child{
-            transition-delay: 0.2s;
-            transform: translateX(0px);
+    &.on .inner{
+        h1, p{
+            transform: translateY(0);
+            opacity: 1;
         }
+    
+        .wrap article{
+            opacity: 1;
 
-        &:last-child{
-            transition-delay: 0.2s;
-            transform: translateX(0px);
+            &:first-child{
+                transition-delay: 0.3s;
+                transform: translateX(0px);
+            }
+
+            &:last-child{
+                transition-delay: 0.3s;
+                transform: translateX(0px);
+            }
         }
     }
 
@@ -876,6 +898,9 @@
 
         h1{
             @include title();
+            transform: translateY(50px);
+            transition: 1s;
+            opacity: 0;
 
             &::after{
                 content: '';
@@ -891,6 +916,9 @@
 
         >p{
             @include title2();
+            transform: translateY(-50px);
+            transition: 1s;
+            opacity: 0;
         }
 
         .wrap{

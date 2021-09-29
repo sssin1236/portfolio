@@ -91,9 +91,10 @@ let len2 = $btns.length;
 let baseLine = -250;
 
 $(".btnNext").on("click", function(){
+    $dots.children("div").removeClass("on");
+    
     for(let i=0; i<$dots.length; i++){
-        $dots.find("div").removeClass("on");
-        $dots.eq(i).find("div").addClass("on");
+        $dots.eq(i).children("div").addClass("on");
     }
 });
 

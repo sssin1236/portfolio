@@ -880,8 +880,12 @@ a {
   width: 100%;
   padding: 200px 0;
   background: #efefef; }
-  #brand.on .inner .wrap article {
+  #brand.on .inner h1, #brand.on .inner p {
+    transform: translateY(0);
     opacity: 1; }
+  #brand.on .inner .wrap article {
+    opacity: 1;
+    transition-delay: 0.5s; }
     #brand.on .inner .wrap article:nth-of-type(1) {
       transform: translateY(-30px); }
     #brand.on .inner .wrap article:nth-of-type(2) {
@@ -896,7 +900,10 @@ a {
       font: bold 28px "Rajdhani";
       color: #111;
       text-align: center;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      transform: translateY(50px);
+      transition: 1s;
+      opacity: 0; }
       #brand .inner h1::after {
         content: '';
         display: block;
@@ -911,7 +918,10 @@ a {
       font: 15px "Rajdhani";
       color: #111;
       text-align: center;
-      margin-bottom: 80px; }
+      margin-bottom: 80px;
+      transform: translateY(-50px);
+      transition: 1s;
+      opacity: 0; }
     #brand .inner .wrap {
       width: 100%; }
       #brand .inner .wrap::after {
@@ -924,7 +934,7 @@ a {
         float: left;
         margin-right: 20px;
         position: relative;
-        transition: 1s;
+        transition: 1.5s;
         opacity: 0; }
         #brand .inner .wrap article:hover .txt {
           opacity: 1;
@@ -995,13 +1005,16 @@ a {
   width: 100%;
   padding: 200px 0;
   background: #111; }
+  #comment.on .inner h1, #comment.on .inner p {
+    transform: translateY(0);
+    opacity: 1; }
   #comment.on .inner .wrap article {
     opacity: 1; }
     #comment.on .inner .wrap article:first-child {
-      transition-delay: 0.2s;
+      transition-delay: 0.3s;
       transform: translateX(0px); }
     #comment.on .inner .wrap article:last-child {
-      transition-delay: 0.2s;
+      transition-delay: 0.3s;
       transform: translateX(0px); }
   #comment .inner {
     width: 1180px;
@@ -1011,7 +1024,10 @@ a {
       font: bold 28px "Rajdhani";
       color: #eee;
       text-align: center;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      transform: translateY(50px);
+      transition: 1s;
+      opacity: 0; }
       #comment .inner h1::after {
         content: '';
         display: block;
@@ -1026,7 +1042,10 @@ a {
       font: 15px "Rajdhani";
       color: #eee;
       text-align: center;
-      margin-bottom: 80px; }
+      margin-bottom: 80px;
+      transform: translateY(-50px);
+      transition: 1s;
+      opacity: 0; }
     #comment .inner .wrap {
       width: 100%; }
       #comment .inner .wrap::after {
