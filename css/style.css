@@ -1248,7 +1248,8 @@ a {
   position: fixed;
   right: 50px;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  z-index: 3; }
   #navi li {
     margin: 20px 0; }
     #navi li a {
@@ -1256,10 +1257,10 @@ a {
       width: 10px;
       height: 10px;
       border-radius: 5px;
-      background: #888;
+      background: #eee;
       transition: 0.5s; }
       #navi li a.on {
-        background: #111;
+        background: #ff5b20;
         height: 60px; }
 
 @media screen and (max-width: 1179px) {

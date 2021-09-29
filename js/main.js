@@ -90,6 +90,20 @@ if(isOn){
     closeWrap1();
 }
 
+$("#navi li a").on("click", function(e){
+    e.preventDefault();
+
+    let target = $(this).attr("href");
+
+    let targetPos = $(target).offset().top;
+
+    $("html, body").animate({
+        scrollTop : targetPos
+    }, 1000);
+});
+
+
+
 
 function openWrap1(){
     $top.animate({width : "60%"}, speed, function(){
