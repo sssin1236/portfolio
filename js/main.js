@@ -72,6 +72,7 @@ function activation2(index, dots){
     dots[index].classList.add("on");
 }
 
+//--------------------------------jQuery----------------------------------------
 
 const $article = $("article");
 const $txt = $("#visual .txt");
@@ -80,9 +81,39 @@ const $right = $(".line2");
 const $bottom = $(".line3");
 const $left = $(".line4");
 const $dots = $("span");
+const $btns = $("#navi li");
+const $boxs = $(".myScroll");
 
 let speed = 700;
 let isOn = $article.hasClass("on");
+let posArr = [];
+let len2 = $btns.length;
+let baseLine = -250;
+
+for(let i=0; i<len2; i++){
+    posArr.push($boxs.eq(i).offset().top);
+}
+
+$(window).on("resize", function(){
+    posArr = [];
+    for(let i=0; i<len2; i++){
+        posArr.push($boxs.eq(i).offset().top);
+    }
+});
+
+$(window).on("scroll", function(){
+    let scroll = $(this).scrollTop();
+
+    for(let i=0; i<len2; i++){
+        if(scroll >= posArr[i] + baseLine){
+            $btns.children("a").removeClass("on");
+            $btns.eq(i).children("a").addClass("on");
+
+            $boxs.removeClass("on");
+            $boxs.eq(i).addClass("on");
+        }
+    }
+});
 
 if(isOn){
     openWrap1();
