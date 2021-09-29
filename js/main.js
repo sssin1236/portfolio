@@ -72,12 +72,14 @@ function activation2(index, dots){
     dots[index].classList.add("on");
 }
 
+
 const $article = $("article");
 const $txt = $(".txt");
 const $top = $(".line1");
 const $right = $(".line2");
 const $bottom = $(".line3");
 const $left = $(".line4");
+const $dots = $("span");
 
 let speed = 700;
 let isOn = $article.hasClass("on");

@@ -531,6 +531,8 @@ a {
         left: 8px;
         margin-left: -1px;
         transition: 0.5s; }
+        #visual .col span div.on {
+          height: 151px; }
       #visual .col span i {
         display: inline-block;
         margin-right: 30px;
