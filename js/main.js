@@ -74,7 +74,7 @@ function activation2(index, dots){
 
 
 const $article = $("article");
-const $txt = $(".txt");
+const $txt = $("#visual .txt");
 const $top = $(".line1");
 const $right = $(".line2");
 const $bottom = $(".line3");

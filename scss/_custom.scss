@@ -14,3 +14,19 @@
 // #7F462C 세피아
 
 $mainFon: 'Rajdhani'; 
+
+$mainCol: rgb(255, 91, 32);
+
+@mixin title($fontS:28px, $mb:40px, $color:#eee, $textAl:center){
+    font: bold $fontS/1 $mainFon;
+    color: $color;
+    text-align: $textAl;
+    margin-bottom: $mb;
+}
+
+@mixin title2($fontS:15px, $color:#eee, $mb:80px){
+    font: $fontS/1 $mainFon;
+    color:  $color;
+    text-align: center;
+    margin-bottom: $mb;
+}
