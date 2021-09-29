@@ -83,8 +83,14 @@
                     margin-right: 0;
                 }
 
+                &:hover a i{
+                    transform: scale(1.2);
+                    color: #eee;
+                }
+
                 a i{
                     color: #aaa;
+                    transition: 0.3s;
                 }
             }
         }
@@ -267,9 +273,9 @@
                 margin-left: -1px;
                 transition: 0.5s;
 
-                &.on{
-                    height: 151px;
-                }
+                // &.on{
+                //     height: 151px;
+                // }
             }
 
             

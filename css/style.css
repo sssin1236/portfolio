@@ -385,8 +385,12 @@ a {
       margin-right: 20px; }
       #header .inner .util li:last-child {
         margin-right: 0; }
+      #header .inner .util li:hover a i {
+        transform: scale(1.2);
+        color: #eee; }
       #header .inner .util li a i {
-        color: #aaa; }
+        color: #aaa;
+        transition: 0.3s; }
     #header .inner .btnMo {
       display: none;
       float: right;
@@ -529,8 +533,6 @@ a {
         left: 8px;
         margin-left: -1px;
         transition: 0.5s; }
-        #visual .col span div.on {
-          height: 151px; }
       #visual .col span i {
         display: inline-block;
         margin-right: 30px;
